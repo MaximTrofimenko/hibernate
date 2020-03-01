@@ -23,6 +23,7 @@ public class MainClass {
         //Customer customer = session.get(Customer.class, 4);
         Product product = session.get(Product.class,2);
 
+
         //System.out.println(customer);
         System.out.println(product);
         session.getTransaction().commit();

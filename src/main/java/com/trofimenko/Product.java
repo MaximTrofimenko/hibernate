@@ -16,7 +16,6 @@ public class Product {
     @Column(name = "cost")
     private int cost;
 
-
     public int getId() {
         return id;
     }
@@ -36,8 +35,7 @@ public class Product {
         this.cost = cost;
     }
 
-
-
+    
     @ManyToMany(fetch = FetchType.LAZY)
     @JoinTable(
             name = "customers_products",
