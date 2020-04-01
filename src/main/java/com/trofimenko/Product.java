@@ -38,7 +38,7 @@ public class Product {
 
 
 
-    @ManyToMany(fetch = FetchType.LAZY)
+    @ManyToMany(fetch = FetchType.EAGER)
     @JoinTable(
             name = "customers_products",
             joinColumns = @JoinColumn(name = "products_id"),
